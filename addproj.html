@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <style>
+        *{
+            background-color: black;
+            color: coral;
+        }
+        h1{
+            text-align: center;
+            margin: 30px auto;
+            font-size: 50px;
+        }
+        form{
+            text-align: center;
+            margin: 40px auto;
+            font-size: 30px;
+        }
+        input{
+            margin: 4px;;
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+        }
+        input[type=radio]{
+            margin: 8px;;
+            width: 20px;
+            height: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Add Projects</u></h1>
+    <form action="add_proj.php" method="post">
+        <p>UserName:<input type="text" name="username"></p>
+        <p>Project Name:<input type="text" name="projname"></p>
+        <p>Client: <input type="text" name="client"></p>
+        <p>Technologies used:<input type="text" name="technology"></p>
+        <p>Project Description:<textarea name="desc" id="desc" cols="40" rows="5"></textarea></p>
+        <p>Project Type: <input type="radio" name="type" value="individual">Individual
+        <input type="radio" name="type" value="group">Group</p>
+        <p>Status (In queue/In progress/Completed ): <input type="text" name="status"></p>
+        <p>Start Date: <input type="date" name="startdate"></p>
+        <p>End Date: <input type="date" name="enddate"></p>
+        <input type="submit" vaue="Register" onclick="addproj()">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
